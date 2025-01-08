@@ -1,0 +1,90 @@
+{% load static %}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ArtMoney Compagny</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/progressbar_barfiller.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animated-headline.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+</head>
+<body class="full-wrapper">
+
+{% include 'layouts/preloader.html' %}
+{% include 'layouts/header.html' %}
+
+{% block Page %}
+{% endblock Page %}
+
+{% include 'layouts/footer.html' %}
+
+    
+
+<!-- Search model end -->
+<!-- Scroll Up -->
+<div id="back-top" >
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+<!-- JS here -->
+<!-- Jquery, Popper, Bootstrap -->
+<script src="{% static 'js/vendor/modernizr-3.5.0.min.js ' %}"></script>
+<script src="{% static 'js/vendor/jquery-1.12.4.min.js ' %}"></script>
+<script src="{% static 'js/popper.min.js ' %}"></script>
+<script src="{% static 'js/bootstrap.min.js ' %}"></script>
+
+<!-- Slick-slider , Owl-Carousel ,slick-nav -->
+<script src="{% static 'js/owl.carousel.min.js ' %}"></script>
+<script src="{% static 'js/slick.min.js ' %}"></script>
+<script src="{% static 'js/jquery.slicknav.min.js ' %}"></script>
+
+<!-- One Page, Animated-HeadLin, Date Picker -->
+<script src="{% static 'js/wow.min.js ' %}"></script>
+<script src="{% static 'js/animated.headline.js ' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.js ' %}"></script>
+<script src="{% static 'js/gijgo.min.js ' %}"></script>
+
+<!-- Nice-select, sticky,Progress -->
+<script src="{% static 'js/jquery.nice-select.min.js ' %}"></script>
+<script src="{% static 'js/jquery.sticky.js ' %}"></script>
+<script src="{% static 'js/jquery.barfiller.js ' %}"></script>
+
+<!-- counter , waypoint,Hover Direction -->
+<script src="{% static 'js/jquery.counterup.min.js ' %}"></script>
+<script src="{% static 'js/waypoints.min.js ' %}"></script>
+<script src="{% static 'js/jquery.countdown.min.js ' %}"></script>
+<script src="{% static 'js/hover-direction-snake.min.js ' %}"></script>
+
+<!-- contact js -->
+<script src="{% static 'js/contact.js ' %}"></script>
+<script src="{% static 'js/jquery.form.js ' %}"></script>
+<script src="{% static 'js/jquery.validate.min.js ' %}"></script>
+<script src="{% static 'js/mail-script.js ' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js ' %}"></script>
+
+<!-- Jquery Plugins, main Jquery -->	
+<script src="{% static '/js/plugins.js ' %}"></script>
+<script src="{% static '/js/main.js ' %}"></script>
+
+</body>
+</html>
