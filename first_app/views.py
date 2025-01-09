@@ -16,17 +16,20 @@ def blog(req):
 def shop(req):
     return render(req, 'pages/shop.html')
 
+def product_details(req, product_id):
+    return render(req, 'pages/product_detail.html')
+
 def contact(req):
     if req.method == 'POST':
-        nom = req.POST.get('nom')
+        name = req.POST.get('name')
         email = req.POST.get('email')
-        sujet = req.POST.get('sujet')
+        subject = req.POST.get('subject')
         message = req.POST.get('message')
         
         newContact = Contact(
-            nom=nom, 
+            name=name, 
             email=email, 
-            sujet=sujet, 
+            subject = subject ,
             date =  datetime.now(),
             message=message
         )
@@ -35,4 +38,5 @@ def contact(req):
         
         return redirect('Contact')    
     return render(req, 'pages/contact.html')
+
 
